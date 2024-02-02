@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> React Landing Page </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="first-line">
+       <p class="p1">Support Ukraine </p>
+       <p class="p2">UA</p>
+       <a href="https://www.facebook.com/fundraisers/explore/search/charities/?query=ukraine">Help Provide Humanitarain to Ukraine.</a>
+    </div>
+
+    <!-- 1st line completed  -->
+
+    <section>
+        <nav>
+            <div class="nav-item">
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-solid fa-list"></i>
+                <input type="search" placeholder="Search">
+                <a href="">Learn</a>
+                <a href="">Reference</a>
+                <a href="">Comunity</a>
+                <a href="">Blog</a>
+                <i class="fa-regular fa-moon"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </nav>
+    </section>
+
+    <!-- navbar completed  -->
+
+    <div class="content">
+        <i class="fa-brands fa-react"></i>
+        <h1>React</h1>
+        <p>The library for web and native user interfaces</p>
+        <button class="btn1">Learn React</button>
+        <button class="btn2">API Reference</button>
+    </div>
+
+    <!-- content icon heading & button completed  -->
+
+    <div class="content2">
+        <h1>Create user interfaces <br> from components</h1> <br>
+        <p>React lets you build user interfaces out of individual pieces called components. <br> Create your own React components like <span>Thumbnail</span>, <span>LikeButton</span>, and <span>Video</span>. <br> Then combine them into entire screens, pages, and apps.</p>
+        <div class="child2">
+            <div class="code2">
+                <p class="p3">Video.js</p>
+                <p class="p4">
+                    &nbsp;&nbsp; funtion video((video)){ <br><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; return( <br><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thumbnail video={video} <br><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{video.url=} <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{video.titlle} <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{video.description} <br><br>
+
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LikeButton video={video} <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; ); <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                </p>
+            </div>
+            <div class="video2">
+                <div class="child-video">
+                    <img src="./google-unavailable-video-63502fe88c3a1-sej-400x210.webp" alt="">
+                    <p><b>My Video</b> <br> Video Description</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+        </div>
+        <p class="p5">
+            Whether you work on your own or with thousands of other developers, using <br> React feels the same. It is designed to let you seamlessly combine components <br> written by independent people, teams, and organizations.
+        </p>
+    </div>
+
+    <!-- content2 completed  -->
+
+    <div class="content3">
+        <h1>Write components <br> with code and markup</h1>
+        <p> React components are JavaScript functions. Want to show some content <br>conditionally? Use an <span>if</span> statement. Displaying a list? Try array <span>map()</span>. Learning <br> React is learning programming.</p>
+        <div class="child3">
+            <div class="code3">
+                <p class="p6">Videolist.js</p>
+                <p class="p7">
+                    &nbsp;&nbsp;&nbsp;function VideoList({ videos, emptyHeading }) { <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const count = videos.length; <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let heading = emptyHeading; <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (count > 0) { <br> <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const noun = count > 1 ? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Videos' : 'Video'; <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; heading = count + ' ' + noun; <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br> <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return ( <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{heading} <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{videos.map&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(video => <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Video key={video.id} video={video} <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)} <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;); <br>
+                    &nbsp;&nbsp;} <br>
+                </p>
+            </div>
+            <div class="video3">
+                <p><b>3 Videos</b></p>
+                <div class="child2-video">
+                    <img src="./20230724_iStock-1248852677_3x2.webp" alt="">
+                    <p><b>First Video</b> <br> Video description</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="child2-video">
+                    <img src="./652039819ea9c76030e40526_Visual-contents-concept-social-networking.jpeg" alt="">
+                    <p><b>Second Video</b> <br> Video description</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="child2-video">
+                    <img src="./digital-video-advertising-61cbfa8047963-sej-1280x720.webp" alt="">
+                    <p><b>Third Video</b> <br> Video description</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+        </div>
+        <p class="p8">This markup syntax is called JSX. It is a JavaScript syntax extension popularized <br> by React. Putting JSX markup close to related rendering logic makes React <br> components easy to create, maintain, and delete.
+        </p>
+    </div>
+
+    <!-- content3 completed  -->
+
+    <div class="content4">
+        <h1>Add interactivity <br> wherever you need it</h1> <br>
+        <p>React components receive data and return what should appear on the screen. <br> You can pass them new data in response to an interaction, like when the user <br> types into an input. React will then update the screen to match the new data.</p> <br>
+        <div class="child4">
+            <div class="code4">
+                <p class="p8">Search Able Video List.js</p>
+                <p class="p9">
+                     &nbsp; &nbsp; &nbsp;import { useState } from 'react'; <br> <br>
+                    
+                     &nbsp; &nbsp; &nbsp;function SearchableVideoList({ videos }) { <br>
+                    &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;const [searchText, setSearchText] = useState(''); <br>
+                    &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;const foundVideos = filterVideos(videos, searchText); <br>
+                    &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;return ( <br> <br>
+                    &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SearchInput <br>
+                    &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value={searchText} <br>
+                    &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onChange={newText => setSearchText(newText)} <br>
+                    &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VideoList <br>
+                    &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;videos={foundVideos} <br>
+                    &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;emptyHeading={`No matches for “${searchText}”`} <br>
+                    &nbsp; &nbsp; &nbsp;&nbsp;); <br>
+                    &nbsp; &nbsp;&nbsp;} <br>
+                </p>
+            </div>
+
+            <div class="video4">
+                <input type="search" placeholder="example.com/videos.html">
+                <h1>React Videos</h1>
+                <p>A Brief History Of React</p>
+                <input type="search" placeholder="search here">
+                <p>5 Videos</p>
+                <div class="child">
+                    <img src="./1_RDN058L5gQ02Xy13OaxjnQ.jpg" alt="">
+                    <p><b>React: The Documentary</b> <br> The Origin Story Of React</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="child">
+                    <img src="./react-nodejs.webp" alt="">
+                    <p><b>Rethinking best practices</b> <br> Pete Hunt (2013)</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="child">
+                    <img src="./Source_code_for_programming.jpg" alt="">
+                    <p><b>Introducing React Native</b> <br> Tom Oochino (2015)</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="child">
+                    <img src="./Top-7-ReactJS-IDEs-That-Are-Great-For-Front-End-Development-2.webp" alt="">
+                    <p><b>Introducing React Hooks</b> <br> Sophie Alpert And Dan <br> Abramov (2018) </p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="child">
+                    <img src="./combination-of-node.js-with-react-js.jpg" alt="">
+                    <p><b>Introducing Server <br> Compponents</b> <br> Dan Abramov And <br> Lauren Tan</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+        </div>
+        <p class="p10">You dont have to build your whole page in React. Add React to your existing <br> HTML page, and render interactive React components anywhere on it.</p>
+        <button class="btn3"><b> Add React Your Page > </b></button>
+    </div>
+
+         <!-- content4 completed  -->
+    
+         <div class="content5">
+            <h1>Go Full-Stack <br>with a framework</h1> <br>
+            <p>React is a library. It lets you put components together, but it doesnt prescribe <br> how to do routing and data fetching. To build an entire app with React, we <br> recommend a full-stack React framework like <span>Next.js</span> or <span>Remix.</span></p><br>
+
+            <div class="child5">
+                <div class="code5">
+                    <p class="p11">confs/[slug].js</p>
+                    <p class="p12">
+                        &nbsp;&nbsp;&nbsp;import { db } from './database.js'; <br>
+                        &nbsp;&nbsp;&nbsp;import { Suspense } from 'react'; <br><br><br>
+                        
+                        &nbsp;&nbsp;&nbsp;async function ConferencePage({ slug }) { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const conf = await db.Confs.find({ slug }); <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return ( <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ConferenceLayout conf={conf} <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suspense fallback={<TalksLoading />}> <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Talks confId={conf.id} <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suspense> <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ConferenceLayout> <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;); <br>
+                        &nbsp;&nbsp;&nbsp;} <br> <br><br>
+                        
+                        &nbsp;&nbsp;&nbsp;async function Talks({ confId }) { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const talks = await db.
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Talks.findAll({ confId }); <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const videos = talks.map(talk => talk.video); <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return SearchableVideoList videos={videos} />; <br>
+                          &nbsp;&nbsp;&nbsp;} <br>
+                    </p>
+                </div>
+                <div class="video5">
+                    <input type="text" placeholder="example.com/confs/react-conf-2021">
+                    <h1><i class="fa-brands fa-react"></i> <br> React Conf 2021</h1>
+                    <input type="search" placeholder="search">
+                    <p>8 Videos</p>
+                    
+                    <div class="child-5">
+                        <img src="./00009.jpg" alt="">
+                        <p><b>React: The Documentary</b> <br> The Origin Story Of React</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="child-5">
+                        <img src="./react-nodejs.webp" alt="">
+                        <p><b>Rethinking best practices</b> <br> Pete Hunt (2013)</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="child-5">
+                        <img src="./react_no-12.jpg" alt="">
+                        <p><b>Introducing React Native</b> <br> Tom Oochino (2015)</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="child-5">
+                        <img src="./react_no-57.jpg" alt="">
+                        <p><b>Introducing React Hooks</b> <br> Sophie Alpert And Dan <br> Abramov (2018) </p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="child-5">
+                        <img src="./react_norway_speaker_talk.jpg" alt="">
+                        <p><b>Introducing Server <br> Compponents</b> <br> Dan Abramov And <br> Lauren Tan</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="child-5">
+                        <img src="./reactjsday22-1.jpeg" alt="">
+                        <p><b>React: The Documentary</b> <br> The Origin Story Of React</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="child-5">
+                        <img src="./reactjsday22-2.jpeg" alt="">
+                        <p><b>React: The Documentary</b> <br> The Origin Story Of React</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="child-5">
+                        <img src="./Source_code_for_programming.jpg" alt="">
+                        <p><b>React: The Documentary</b> <br> The Origin Story Of React</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+
+                </div>
+                
+            <p class="p13">React is also an architecture. Frameworks that implement it let you fetch data in <br> asynchronous components that run on the server or even during the build. Read <br> data from a file or a database, and pass it down to your interactive components.</p> <br>
+             <button class="btn4"> Get Started with a Framework</button>
+        </div>
+
+        <!-- content5 completed  -->
+
+        <div class="content6">
+            <h1 class="heading">Use the best from <br> every platform</h1> <br>
+            <p class="p14">People love web and native apps for different reasons. React lets you build both <br> web apps and native apps using the same skills. It leans upon each platforms <br> unique strengths to let your interfaces feel just right on every platform.</p> <br>
+
+            <div class="child6">
+                <div class="card1">
+                    <input type="search" placeholder="search">
+                    <h1>Stay true to the web</h1>
+                    <p>People expect web app pages to load fast. On the <br> server, React lets you start streaming HTML while <br> you re still fetching data, progressively filling in the <br> remaining content before any JavaScript code loads. <br> On the client, React can use standard web APIs <br> to keep your UI responsive even in the middle <br> of rendering.</p>
+                </div>
+                <div class="card2">
+                    <h1>Go truly native</h1>
+                    <p>People expect native apps to look and feel like their <br> platform. React Native and Expo let you build apps <br> in React for Android, iOS, and more. They look and  <br>feel native because their UIs are truly native. Its not <br> a web view—your React components render real <br> Android and iOS views provided by the platform.</p>
+                </div>
+            </div>
+
+                <!-- <div class="icon1"><i class="fa-brands fa-chrome"></i></div>
+                <div class="icon2"><i class="fa-brands fa-firefox"></i></div>
+                <div class="icon3"><i class="fa-solid fa-clock"></i></div>
+                <div class="icon4"><i class="fa-brands fa-apple"></i></div>
+                <div class="icon5"><i class="fa-brands fa-android"></i> -->
+
+            <p class="p16">With React, you can be a web and a native developer. Your team can ship to many <br> platforms without sacrificing the user experience. Your organization can bridge <br> the platform silos, and form teams that own entire features end-to-end.</p> <br>
+            <button class="btn5">Build For Native Platform</button>
+        </div>
+
+        <!-- content6 completed  -->
+
+        <div class="content7">
+        
+        <div class="text1">
+            <h1>Upgrade when the <br> future is ready</h1>
+            <p>React approaches changes with care. Every React <br> commit is tested on business-critical surfaces with <br> over a billion users. Over 100,000 React components <br> at Meta help validate every migration strategy. <br><br>
+
+            The React team is always researching how to improve <br> React. Some research takes years to pay off. React has <br> a high bar for taking a research idea into production. <br> Only proven approaches become a part of React.</p>
+            <button class="btn6">Read More React News</button>
+        </div>
+
+    <div class="card3">
+    <!-- <p class="p17">LATEST REACT NEWS</p> -->
+
+    <div class="card-child1">
+        <div class="cards"><h3>React Canaries: <br> Incremental <br> Feature Rollout</h3> <br> May 3, 2023</div>
+    <div class="cards"><h3>React Labs: <br> March 2023 </h3> <br> March 22, 2023</div>
+    </div>
+
+    <div class="card-child2">
+        <div class="cards"><h3>Introducing <br> react.dev </h3> <br> March 16, 2023</div>
+        <div class="cards"><h3>React Labs: June</h3> <br> June 15, 2022</div>
+    </div>
+   </div>
+
+ </div>
+
+ <!-- content7 completed  -->
+
+     <div class="content8">
+         <h1>Join a community <br> of millions</h1>
+         <p>Youre not alone. Two million developers from all over the world visit the React <br> docs every month. React is something that people and teams can agree on.</p>
+
+         <div class="flex-img">
+
+            <div class="images"><img src="./reactjsday22-2.jpeg" alt=""></div>
+            <div class="images"><img src="./react_no-57.jpg" alt=""></div>
+            <div class="images"><img src="./reactjsday22-1.jpeg" alt=""></div>
+            <div class="images"><img src="./react_no-12.jpg" alt=""></div>
+            <div class="images"><img src="./react_norway_speaker_talk.jpg" alt=""></div>
+
+         </div>
+
+         <p>This is why React is more than a library, an architecture, or even an ecosystem. <br> React is a community. Its a place where you can ask for help, find opportunities, <br> and meet new friends. You will meet both developers and designers, beginners <br> and experts, researchers and artists, teachers and students. Our backgrounds <br> may be very different, but React lets us all create user interfaces together.</p> <br>
+
+         <i class="fa-brands fa-react"></i>
+         <h1>Welcome to the <br> React community</h1>
+         <button class="btn7">Get Started</button>
+
+         <div class="flex-card">
+            <div class="footer">
+                <p>Meta Open Source <br> 2024</p>
+            </div>
+            <div class="footer">
+                <p><b>Learn React</b></p>
+                <p>Quick Start</p>
+                <p>Installation</p>
+                <p>Describing the UI</p>
+                <p>Adding Interactivity</p>
+            </div>
+            <div class="footer">
+                <p><b>API Reference</b></p>
+                <p>React APIs</p>
+                <p>React DOM APIs</p>
+            </div>
+            <div class="footer">
+                <p><b>Community</b></p>
+                <p>Code of Conduct</p>
+                <p>Meet the Team</p>
+                <p>Docs Contributors</p>
+                <p>Acknowledgements</p>
+            </div>
+            <div class="footer">
+                <p><b>More</b></p>
+                <p>Blog</p>
+                <p>React Native</p>
+                <p>Privacy</p>
+                <p>Terms</p> <br> <br>
+            </div>
+         </div>
+
+    </div>
+
+    <!-- content8 completed  -->
+
+</body>
+</html>
